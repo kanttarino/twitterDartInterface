@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TwitterInterface</title>
+    <link rel="stylesheet" href="twitterinterface.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato|Roboto' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id="ti_title_container">
+      <span id="ti_title">Dart tweeting interface</span>
+    </div>
+    <div id="container">
+      <div id="ti_tweet_input_box">
+        <div id="ti_tweet_input_box_text">
+          Type here and it will appear in your timeline
+        </div>
+        <input type="text" class="ti_tweet_input" id="username" placeholder="Username">
+        <textarea rows="5" class="ti_tweet_input" id="message" placeholder="Type here and enter to send"></textarea>
+      </div>
+      <div id="ti_tweet_list"></div>
+    </div>
+
+    <script type="application/dart" src="twitterinterface.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
